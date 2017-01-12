@@ -33,7 +33,9 @@ public class Stack<Item>implements Iterable<Item> {
 	  N--;
 	  return temp;
 	}
-	
+	public Item peep(){
+	  return first.item;
+	}
 	public Iterator<Item> iterator() {
 		return new ListLterator();
 	}
