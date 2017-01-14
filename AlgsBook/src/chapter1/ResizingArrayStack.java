@@ -25,7 +25,8 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
     }
     
 	private void reSize(int i) {
-      Item[]temp=(Item[])new Object[i];
+      @SuppressWarnings("unchecked")
+    Item[]temp=(Item[])new Object[i];
       for (int j = 0; j < a.length; j++) {
 		temp[j]=a[j];
 	  }
