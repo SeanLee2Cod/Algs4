@@ -5,6 +5,7 @@ import java.util.Iterator;
 public class ResizingArrayStack<Item> implements Iterable<Item> {
     private Item[] a;
     private int N;
+    @SuppressWarnings("unchecked")
     public ResizingArrayStack(){
     	a=(Item[])new Object[1];
     }
