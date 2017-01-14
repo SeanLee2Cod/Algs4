@@ -8,7 +8,6 @@ public class ResizingArrayQueue<Item>implements Iterable<Item> {
 	private int head=0;
 	private int tail=0;
 	//initializing an Array as data structure
-	@SuppressWarnings("unchecked")
 	public ResizingArrayQueue(){
       a=(Item[])new Object[1];//special initializing method for generics for Java 		
 	}
